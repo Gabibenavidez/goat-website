@@ -1,0 +1,298 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.desktop-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.desktop-nav a:hover {
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1068px) {
+  .nav-link.active::after {
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 735px) {
+  .nav-link.active::after {
+    width: 40%;
+  }
+}
+
+
+/* Dropdown */
+.projects-dropdown {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.dropdown-item {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #333;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.projects-parent {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.dropdown-item {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #333;
+  color: white;
+}
+.projects-wrapper {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-menu.visible {
+  display: flex;
+  animation: dropdownFadeIn 0.75s ease-out both;
+}
+
+
+.dropdown-item {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.dropdown-item:hover {
+  background: #333;
+  color: white;
+}
+
+/* Mobile drop */
+.mobile-dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.mobile-dropdown .dropdown-item {
+  background: none;
+  border: none;
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  animation: mobileDropdownFade 0.3s ease both;
+}
+
+
+.mobile-dropdown .dropdown-item:hover {
+  color: white;
+}
+
+@keyframes mobileDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-menu.visible .dropdown-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: dropdownItemFade 0.3s ease-out forwards;
+}
+
+.dropdown-menu.visible .dropdown-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.dropdown-menu.visible .dropdown-item:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.dropdown-menu.visible .dropdown-item:nth-child(3) {
+  animation-delay: 0.20s;
+}
+@keyframes dropdownItemFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
