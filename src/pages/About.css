@@ -16,7 +16,7 @@
   text-transform: uppercase;
   position: relative;
   color: #fff;
-  animation: flicker 2s infinite alternate;
+  animation: pulse 8s infinite;
   letter-spacing: 8px;
 }
 
@@ -26,8 +26,8 @@
   color: #ccc;
 }
 
-/* Efecto destello intermitente */
-@keyframes flicker {
+/* Efecto destello intermitente
+/* @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
     text-shadow:
@@ -43,7 +43,49 @@
     opacity: 0.6;
     text-shadow: none;
   }
+} */
+
+ /* @keyframes blink {
+  0%, 10%, 30%, 50%, 70%, 90% {
+    opacity: 0.1;
+    text-shadow: none;
+  }
+
+  5%, 15%, 25%, 35%, 55%, 75%, 95% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+}  */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff;
+  }
+
+  50% {
+    opacity: 0.1;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff;
+  }
 }
+
+
 .about-text {
   max-width: 600px;
   margin-top: 2rem;
