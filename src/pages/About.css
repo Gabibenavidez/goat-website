@@ -1,0 +1,54 @@
+.about-page {
+  /* min-height: 100vh; */
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  animation: flicker 2s infinite alternate;
+  letter-spacing: 8px;
+}
+
+.about-subtitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+/* Efecto destello intermitente */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 60px #fff,
+      0 0 80px #fff;
+  }
+
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+.about-text {
+  max-width: 600px;
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #aaa;
+  text-align: center;
+}

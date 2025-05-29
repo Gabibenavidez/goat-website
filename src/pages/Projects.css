@@ -9,7 +9,7 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .preview-container {
@@ -91,4 +91,87 @@
   max-height: 90vh;
 }
 
+
+.project-preview-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.project-preview-container:hover {
+  transform: scale(1);
+}
+
+.project-preview {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+.project-preview-container:hover .project-preview {
+  filter: brightness(0.5) blur(0.5px);
+}
+
+.project-title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease, backdrop-filter 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.project-preview-container:hover .project-title-overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.projects-list {
+  column-count: 3;
+  column-gap: 0rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.project-item {
+  break-inside: avoid;
+  cursor: pointer;
+}
+
+
+.project-preview {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-preview-container:hover .project-title-overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
 

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import "./styles/globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
