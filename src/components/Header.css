@@ -31,7 +31,7 @@
 }
 
 .desktop-nav a:hover {
-  color: white;
+  color: red;
 }
 
 .menu-toggle {
@@ -93,6 +93,9 @@
   width: 0;
   background: white;
   transition: width 0.3s ease;
+}
+.nav-link.active:hover::after {
+  background-color: red;
 }
 
 .nav-link.active {

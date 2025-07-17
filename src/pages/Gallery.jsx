@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import LazyImage from "../components/LazyImage";
 import "./Gallery.css";
 
-const images = [
-  { id: 1, src: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&w=1600&q=80", alt: "Cámara y claqueta en set" },
-  { id: 5, src: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80", alt: "Cámara sobre dolly" },
-  { id: 3, src: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1600&q=80", alt: "Set con luces" },
-  { id: 4, src: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=1600&q=80", alt: "Fondo blanco para producto" },
-  { id: 2, src: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1600&q=80", alt: "Making of de spot comercial" },
-  { id: 8, src: "https://images.pexels.com/photos/7564319/pexels-photo-7564319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080", alt: "Storyboard y dirección" },
-  { id: 13, src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80", alt: "Cámara profesional frontal" },
-  { id: 14, src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80", alt: "Equipo planificando escena" }
-];
+// const defaultImages = [
+//   { id: 1, src: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&w=1600&q=80", alt: "Cámara y claqueta en set" },
+//   { id: 5, src: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80", alt: "Cámara sobre dolly" },
+//   { id: 3, src: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1600&q=80", alt: "Set con luces" },
+//   { id: 4, src: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=1600&q=80", alt: "Fondo blanco para producto" },
+//   { id: 2, src: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1600&q=80", alt: "Making of de spot comercial" },
+//   { id: 8, src: "https://images.pexels.com/photos/7564319/pexels-photo-7564319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080", alt: "Storyboard y dirección" },
+//   { id: 13, src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80", alt: "Cámara profesional frontal" },
+//   { id: 14, src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80", alt: "Equipo planificando escena" }
+// ];
 
-function Gallery() {
+function Gallery({images}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -45,6 +46,8 @@ function Gallery() {
     return () => document.removeEventListener("keydown", handleKey);
   }, []);
 
+  if (!images || images.length === 0) return null;
+
   return (
     <motion.div
       className="gallery-page"
@@ -53,17 +56,20 @@ function Gallery() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="masonry-gallery">
-        {images.map((img, i) => (
-          <motion.div
-            key={img.id}
-            className="masonry-item"
-            onClick={() => openModal(i)}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <img src={img.src} alt={img.alt} />
-          </motion.div>
-        ))}
+        {images?.map((img, i) => (
+  <motion.div
+    key={img.id}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <LazyImage
+      src={img.src}
+      alt={img.alt || `Imagen ${i + 1}`}
+      onClick={() => openModal(i)}
+    />
+  </motion.div>
+))}
+
       </div>
 
       {modalOpen && (
@@ -85,7 +91,7 @@ function Gallery() {
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
-              loading="eager"
+              loading="lazy"
             />
             <button className="nav-button next" onClick={showNext}>→</button>
             <div className="modal-counter">

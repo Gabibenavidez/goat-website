@@ -10,7 +10,6 @@ function Header() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/projects", label: "Proyectos" },
-    { to: "/gallery", label: "Galería" },
     { to: "/about", label: "Sobre Nosotros" },
     { to: "/contact", label: "Contacto" }
   ];
