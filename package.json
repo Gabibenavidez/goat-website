@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vimeo/player": "^2.29.1",
     "motion": "^12.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +20,6 @@
     "vite": "^5.2.0"
   },
   "engines": {
-  "node": "18.x"
+    "node": "18.x"
   }
 }

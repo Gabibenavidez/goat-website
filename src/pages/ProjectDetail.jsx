@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "../data/projects";
 import { motion, AnimatePresence } from "framer-motion";
 import Gallery from "./Gallery";
+import Player from "@vimeo/player";
 import "./ProjectDetail.css";
 import { useEffect, useState } from "react";
 
@@ -29,14 +30,25 @@ function ProjectDetail() {
   // autoplay para el proyecto toyota-yaris-GR
   useEffect(() => {
     if (slug === "toyota-yaris-GR" && heroVideosArray.length > 1) {
+      const iframe = document.querySelector("iframe");
+      const player = new Player(iframe);
+
       const interval = setInterval(() => {
-        setDirection(1);
-        setVideoIndex((prev) => (prev + 1) % heroVideosArray.length);
+        player.getPaused().then((isPaused) => {
+          if (isPaused) {
+            setDirection(1);
+            setVideoIndex((prev) => (prev + 1) % heroVideosArray.length);
+          }
+        });
       }, 6000);
 
-      return () => clearInterval(interval);
+      return () => {
+        clearInterval(interval);
+        player.unload(); // limpia memoria del player
+      };
     }
   }, [slug, heroVideosArray.length]);
+
 
   const nextVideo = () => {
     setDirection(1);
@@ -77,7 +89,7 @@ function ProjectDetail() {
               <AnimatePresence custom={direction} mode="wait">
                 <motion.iframe
                   key={videoIndex}
-                  src={`${currentVideo.src}?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0`}
+                  src={`${currentVideo.src}?autoplay=1&muted=0&loop=1&title=0&byline=0&portrait=0`}
                   frameBorder="0"
                   allow="autoplay; fullscreen;"
                   allowFullScreen
