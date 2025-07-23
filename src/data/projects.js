@@ -59,8 +59,55 @@ export const projects = [
         ],
     },
     {
+      slug: "ds-7-bruno-gillot-2024",
+      title: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
+      isLarge: true,
+      position: 2,
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
+      heroVideos: [{
+          src: "https://player.vimeo.com/video/1099428133?h=f4647ba131&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          orientation: "horizontal"
+      },
+      {
+        src:"https://player.vimeo.com/video/1102034426?h=34f1390e7d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        orientation: "vertical",
+        sideImage: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/66c1ce21-0fa1-4cdf-8701-4cd229a62c2a_rw_1920.jpg?h=c925ccbe384a0a72d02ab9735a183946"
+      }],
+      description: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
+      gallery: [
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/12157396-975a-499e-a47b-8727e0b5bab6_rw_1920.jpg?h=737de928a0ca69fcce39f4e5019823d2",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/d1871b84-d19f-4997-9399-622d424cc2b0_rw_1920.jpg?h=b20c5743179107d0c8d55d18821fa07f",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1f491574-6521-4741-9104-bcef5b9f4c54_rw_1920.jpg?h=a750430cbad58fb4189c25e7464db0e5",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4a060579-0c6f-47aa-a5d5-614a4b67e531_rw_1920.jpg?h=b632c48d4a4279b0ca84509a6ad27996",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4c9906df-0249-4e9d-8946-de82d4c5e56b_rw_1920.jpg?h=319a5915311526e952af9607b1e3833b",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b819c80a-6ff1-4457-b354-53b012be1c3d_rw_1920.jpg?h=2c6bfa7eaf8ef255463f7f8b28cf75a7",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/6a163fda-6008-4080-a100-106322f6f80b_rw_1920.jpg?h=c0c9b6a9aba1da811662e74a01db9ea2",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a5c4e07e-61fe-43db-a1fe-3158eb7c6e83_rw_1920.jpg?h=0f45c4f5f532978713c270449b31fd1b",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/46d198b1-e608-4395-82e3-52d8ecc85822_rw_1920.jpg?h=9a9e388ca753e0d7a5116e62be7ab3f1",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/735b9196-507d-4982-bee9-de06dc123069_rw_1920.jpg?h=420fb7f42a7b9e2806eb08cb1a9a149f",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a890c555-ae51-427b-bb05-c622c0258170_rw_1920.jpg?h=42731d5cc79cc4b0ec7d51b4a86423c3",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c7a1a398-f7ae-4a97-9f9c-b4d0b4ac0398_rw_1920.jpg?h=c88d62218b262f6ce3b9164cabf01990",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/dcf566b9-3d71-4319-84d8-abf3a44492c0_rw_1920.jpg?h=80c1725adbfcb80550e070b6e0ae372a",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/9b079e6e-0251-4d25-9b8b-b2cda54722f1_rw_1920.jpg?h=ef14e1c4e46dbae09b8500a2af626404",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b47feb4e-8dd3-4d29-bda4-d3e6d88797d6_rw_1920.jpg?h=34a8dc381b572619721ae3866b9c7ea5",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c68ce6e1-000c-466e-a664-2ebb8bdfc96e_rw_1920.jpg?h=0e6f28550a3ef6771466c5f6b3d4b17b",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a47a0f9d-4faf-4c8d-b8de-694ceb85cb92_rw_1920.jpg?h=12a236cd65e7ad3f4b15ac564f52239e",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/531c8936-ef18-4724-b34e-6ab729a27029_rw_1920.jpg?h=ef6fbde14efa8cb6c622588c83295532",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/12bb5f11-73b3-4e62-920c-f73c2996196a_rw_1920.jpg?h=7ded82d3c31a3ad6f5f12ee62d7e7d23",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/72f0ffd2-7f65-49d8-b567-c9d78e2c2643_rw_1920.jpg?h=d7881cc857a6d6f4169a49232859c5c9",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/113b938c-26bf-4231-aa47-fcba22dd2deb_rw_1920.jpg?h=f20aa390b98035e2b2609189447d9d47",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/19e0f171-c980-4acc-a3c9-7a7e68969593_rw_1920.jpg?h=f5ef684d654c8b54b5fbb68c2f9602cf",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/38885782-74e9-4904-96d3-010345135fff_rw_1920.jpg?h=13b1c7bc52ad642c78038dabc706b3a5",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/f8ba472d-b919-4298-b72b-7e4f218a9661_rw_1920.jpg?h=2957b2219b660fc692379c40a264ebef",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/f013fa5c-e768-4291-8e10-44d81bae57d7_rw_1920.jpg?h=1aa1ae76680b216eb1bea6d68b4a69d3",
+        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/66c1ce21-0fa1-4cdf-8701-4cd229a62c2a_rw_1920.jpg?h=c925ccbe384a0a72d02ab9735a183946"
+      ]
+    },
+    {
     slug: "toyota-yaris-GR",
     title: "Toyota Yaris GR",
+    isLarge: true,
     preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/62199419-91ea-48fa-8317-43920c3e87ad_rw_1200.jpg?h=56dcac34b847fa7c76765547bec31e73",
     heroVideos: [{
         src: "https://player.vimeo.com/video/1099814152?h=9736a4d239&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -196,6 +243,8 @@ export const projects = [
     {
       slug: "generacion-dorada-gatorade-2024",
       title: "GENERERACION DORADA GATORADE - 2024",
+      isLarge: true,
+      position: 1,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/968ecc45-146a-401c-8659-5bca3817a875_rw_1920.jpg?h=020ed52bffcfb6e7642c40d08eeaf7e0",
       heroVideos: [{
         src: "https://player.vimeo.com/video/1099680698?h=4594439228&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -248,50 +297,6 @@ export const projects = [
         "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/f3ed999b-4c60-4754-9cb6-b8c968860463_rw_1920.jpg?h=618aea9389a65aefb9566ab85025cf3b",
         "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/8d2869f9-def4-4ff3-b763-1c947bf12eae_rw_1920.jpg?h=1a91c60f1f47f91db6331d5a17a7b08a"
       ],
-    },
-    {
-      slug: "ds-7-bruno-gillot-2024",
-      title: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
-      heroVideos: [{
-          src: "https://player.vimeo.com/video/1099428133?h=f4647ba131&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-          orientation: "horizontal"
-      },
-      {
-        src:"https://player.vimeo.com/video/1102034426?h=34f1390e7d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        orientation: "vertical",
-        sideImage: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/66c1ce21-0fa1-4cdf-8701-4cd229a62c2a_rw_1920.jpg?h=c925ccbe384a0a72d02ab9735a183946"
-      }],
-      description: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
-      gallery: [
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/12157396-975a-499e-a47b-8727e0b5bab6_rw_1920.jpg?h=737de928a0ca69fcce39f4e5019823d2",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/d1871b84-d19f-4997-9399-622d424cc2b0_rw_1920.jpg?h=b20c5743179107d0c8d55d18821fa07f",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1f491574-6521-4741-9104-bcef5b9f4c54_rw_1920.jpg?h=a750430cbad58fb4189c25e7464db0e5",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4a060579-0c6f-47aa-a5d5-614a4b67e531_rw_1920.jpg?h=b632c48d4a4279b0ca84509a6ad27996",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4c9906df-0249-4e9d-8946-de82d4c5e56b_rw_1920.jpg?h=319a5915311526e952af9607b1e3833b",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b819c80a-6ff1-4457-b354-53b012be1c3d_rw_1920.jpg?h=2c6bfa7eaf8ef255463f7f8b28cf75a7",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/6a163fda-6008-4080-a100-106322f6f80b_rw_1920.jpg?h=c0c9b6a9aba1da811662e74a01db9ea2",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a5c4e07e-61fe-43db-a1fe-3158eb7c6e83_rw_1920.jpg?h=0f45c4f5f532978713c270449b31fd1b",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/46d198b1-e608-4395-82e3-52d8ecc85822_rw_1920.jpg?h=9a9e388ca753e0d7a5116e62be7ab3f1",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/735b9196-507d-4982-bee9-de06dc123069_rw_1920.jpg?h=420fb7f42a7b9e2806eb08cb1a9a149f",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a890c555-ae51-427b-bb05-c622c0258170_rw_1920.jpg?h=42731d5cc79cc4b0ec7d51b4a86423c3",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c7a1a398-f7ae-4a97-9f9c-b4d0b4ac0398_rw_1920.jpg?h=c88d62218b262f6ce3b9164cabf01990",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/dcf566b9-3d71-4319-84d8-abf3a44492c0_rw_1920.jpg?h=80c1725adbfcb80550e070b6e0ae372a",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/9b079e6e-0251-4d25-9b8b-b2cda54722f1_rw_1920.jpg?h=ef14e1c4e46dbae09b8500a2af626404",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b47feb4e-8dd3-4d29-bda4-d3e6d88797d6_rw_1920.jpg?h=34a8dc381b572619721ae3866b9c7ea5",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c68ce6e1-000c-466e-a664-2ebb8bdfc96e_rw_1920.jpg?h=0e6f28550a3ef6771466c5f6b3d4b17b",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a47a0f9d-4faf-4c8d-b8de-694ceb85cb92_rw_1920.jpg?h=12a236cd65e7ad3f4b15ac564f52239e",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/531c8936-ef18-4724-b34e-6ab729a27029_rw_1920.jpg?h=ef6fbde14efa8cb6c622588c83295532",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/12bb5f11-73b3-4e62-920c-f73c2996196a_rw_1920.jpg?h=7ded82d3c31a3ad6f5f12ee62d7e7d23",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/72f0ffd2-7f65-49d8-b567-c9d78e2c2643_rw_1920.jpg?h=d7881cc857a6d6f4169a49232859c5c9",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/113b938c-26bf-4231-aa47-fcba22dd2deb_rw_1920.jpg?h=f20aa390b98035e2b2609189447d9d47",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/19e0f171-c980-4acc-a3c9-7a7e68969593_rw_1920.jpg?h=f5ef684d654c8b54b5fbb68c2f9602cf",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/38885782-74e9-4904-96d3-010345135fff_rw_1920.jpg?h=13b1c7bc52ad642c78038dabc706b3a5",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/f8ba472d-b919-4298-b72b-7e4f218a9661_rw_1920.jpg?h=2957b2219b660fc692379c40a264ebef",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/f013fa5c-e768-4291-8e10-44d81bae57d7_rw_1920.jpg?h=1aa1ae76680b216eb1bea6d68b4a69d3",
-        "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/66c1ce21-0fa1-4cdf-8701-4cd229a62c2a_rw_1920.jpg?h=c925ccbe384a0a72d02ab9735a183946"
-      ]
     },
     {
       slug: "monster-2025",
@@ -402,6 +407,8 @@ export const projects = [
     {
       slug: "ds-7-bruno-gillot-mercedes",
       title: "DS 7 - Bruno Gillot - Mercedes - 2024",
+      isLarge: true,
+      position: 3,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b9a59a68-fedf-41cc-bcd3-51398e1d0567_rw_1200.jpg?h=c5a68050b9c1fcfd1f3741366308ca27",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428445?h=08bcab9645&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -448,6 +455,7 @@ export const projects = [
     {
       slug: "final-futbol-femenino-boca-vs-river-2023",
       title: "FINAL FUTBOL FEMENINO BOCA VS RIVER - 2023",
+      isLarge: true,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/31e0b471-e4b6-4f9d-a631-3661cb0ba5d5_rw_1200.JPG?h=d8786fb5b073438a93a5ed25e09a32a6",
       heroVideos: {
           orientation: "horizontal"
@@ -521,6 +529,8 @@ export const projects = [
     {
       slug: "ds-7-bruno-gillot-pigue-2024",
       title: "DS 7 - BRUNO GUILLOT - PIGUÉ - 2024",
+      isLarge: true,
+      position: 4,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1370800e-fdf4-486c-b17d-2302136e296e_rw_1920.jpg?h=0cabb23c613ac0a1c2940b76f51b77c1",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428950?h=7eba73ed7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",

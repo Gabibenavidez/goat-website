@@ -6,6 +6,12 @@ import "./Projects.css";
 function Projects() {
   const navigate = useNavigate();
 
+  const orderedProjects = [...projects].sort((a, b) => {
+  const posA = Number(a.position ?? Infinity); // si no tiene position, lo manda al final
+  const posB = Number(b.position ?? Infinity);
+  return posA - posB;
+});
+
   return (
     <motion.div
       className="projects-page"
@@ -14,9 +20,10 @@ function Projects() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="projects-list">
-        {projects.map((proj, i) => (
+        {orderedProjects.map((proj, i) => (
           <motion.div
             key={proj.slug}
+            // className={`project-item ${proj.isLarge ? "large" : ""}`}
             className="project-item"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "../data/projects";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Gallery from "./Gallery";
 import "./ProjectDetail.css";
 import { useEffect, useState } from "react";
@@ -9,6 +9,7 @@ function ProjectDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [videoIndex, setVideoIndex] = useState(0);
+  const [direction, setDirection] = useState(0); // para saber si vamos adelante o atrás
 
   useEffect(() => {
     setVideoIndex(0);
@@ -20,23 +21,46 @@ function ProjectDetail() {
     return <div>Proyecto no encontrado</div>;
   }
 
-  // hero videos array check
-  const heroVideosArray = Array.isArray(project.heroVideos)
-    ? project.heroVideos
-    : [];
-  
+  const heroVideosArray = Array.isArray(project.heroVideos) ? project.heroVideos : [];
   const currentVideo = heroVideosArray[videoIndex];
   const isVertical = currentVideo?.orientation === "vertical";
   const hasSideImage = isVertical && currentVideo.sideImage;
 
+  // autoplay para el proyecto toyota-yaris-GR
+  useEffect(() => {
+    if (slug === "toyota-yaris-GR" && heroVideosArray.length > 1) {
+      const interval = setInterval(() => {
+        setDirection(1);
+        setVideoIndex((prev) => (prev + 1) % heroVideosArray.length);
+      }, 6000);
+
+      return () => clearInterval(interval);
+    }
+  }, [slug, heroVideosArray.length]);
+
   const nextVideo = () => {
+    setDirection(1);
     setVideoIndex((prev) => (prev + 1) % heroVideosArray.length);
   };
 
   const prevVideo = () => {
-    setVideoIndex((prev) =>
-      prev === 0 ? heroVideosArray.length - 1 : prev - 1
-    );
+    setDirection(-1);
+    setVideoIndex((prev) => (prev - 1 + heroVideosArray.length) % heroVideosArray.length);
+  };
+
+  const variants = {
+    enter: (dir) => ({
+      x: dir > 0 ? 200 : -200,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (dir) => ({
+      x: dir > 0 ? -200 : 200,
+      opacity: 0,
+    }),
   };
 
   return (
@@ -50,36 +74,58 @@ function ProjectDetail() {
         <>
           <div className={`hero-section ${currentVideo.orientation}`}>
             <div className="hero-video">
-              <iframe
-                src={`${currentVideo.src}?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0`}
-                frameBorder="0"
-                allow="autoplay; fullscreen;"
-                allowFullScreen
-                title={`Video ${videoIndex + 1}`}
-                key={videoIndex}
-              ></iframe>
+              <AnimatePresence custom={direction} mode="wait">
+                <motion.iframe
+                  key={videoIndex}
+                  src={`${currentVideo.src}?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0`}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen;"
+                  allowFullScreen
+                  title={`Video ${videoIndex + 1}`}
+                  custom={direction}
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ duration: 0.6 }}
+                />
+              </AnimatePresence>
             </div>
 
-          {hasSideImage && (
-            <div className="hero-side-image">
-              <img src={currentVideo.sideImage} alt="Complementario" />
-            </div>
+            {hasSideImage && (
+              <div className="hero-side-image">
+                <AnimatePresence custom={direction} mode="wait">
+                  <motion.img
+                    key={videoIndex}
+                    src={currentVideo.sideImage}
+                    alt="Complementario"
+                    custom={direction}
+                    variants={variants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ duration: 1.3 }}
+                  />
+                </AnimatePresence>
+              </div>
+              )}
+          </div>
+
+          {heroVideosArray.length > 1 && (
+            <>
+              <div>{videoIndex + 1} / {heroVideosArray.length}</div>
+              <div>&nbsp;</div>
+              <div style={{fontSize: "12px"}}>Siguiente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anterior</div>
+              <div>&nbsp;</div>
+              <div className="video-controls">
+                <button onClick={prevVideo}>←</button>
+                <button onClick={nextVideo}>→</button>
+              </div>
+            </>
           )}
-        </div>
-        {heroVideosArray.length > 1 && (
-          <>
-            <div>{videoIndex + 1} / {heroVideosArray.length}</div>
-            <div>&nbsp;</div>
-            <div class="video-controls">
-              <button onClick={prevVideo}>←</button>
-              <button onClick={nextVideo}>→</button>
-            </div>
-          </>
-
-        )}
         </>
       )}
-      <div>&nbsp;</div>
+
       <div>&nbsp;</div>
       <p>{project.description}</p>
 
