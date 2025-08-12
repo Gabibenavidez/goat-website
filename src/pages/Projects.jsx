@@ -33,7 +33,6 @@ function Projects() {
           >
             <div className="project-preview-container">
               <img src={proj.preview} alt={proj.title} className="project-preview" />
-              <div className="project-title-overlay">{proj.title}</div>
             </div>
           </motion.div>
         ))}

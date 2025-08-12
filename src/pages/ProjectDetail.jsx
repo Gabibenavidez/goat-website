@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { projects } from "../data/projects";
 import { motion, AnimatePresence } from "framer-motion";
 import Gallery from "./Gallery";
@@ -11,6 +11,11 @@ function ProjectDetail() {
   const navigate = useNavigate();
   const [videoIndex, setVideoIndex] = useState(0);
   const [direction, setDirection] = useState(0); // para saber si vamos adelante o atrás
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
 
   useEffect(() => {
     setVideoIndex(0);

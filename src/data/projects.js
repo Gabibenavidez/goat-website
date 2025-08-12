@@ -2,6 +2,7 @@ export const projects = [
     {
         slug: "coolcam-gatorade",
         title: "COOLCAM GATORADE",
+        position: 5,
         preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/e830e8b7-59b2-490d-896e-ba4fe2e146cb_rw_1200.jpg?h=00b1432d79f7f701438f5925a51a7832",
         heroVideos: [{
             src: "https://player.vimeo.com/video/1099684828?h=a9e3d2ee0b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -32,6 +33,7 @@ export const projects = [
     {
       slug: "jeep-renegade",
       title: "JEEP RENEGADE",
+      position: 7,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1f3adbe6-cb13-4a48-9dda-14e7ab5aa840_rw_1200.jpg?h=95185dd6a30677e35750e054c6857413",
       heroVideos: {
           orientation: "horizontal"
@@ -62,7 +64,7 @@ export const projects = [
       slug: "ds-7-bruno-gillot-2024",
       title: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
       isLarge: true,
-      position: 2,
+      position: 3,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428133?h=f4647ba131&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -107,6 +109,7 @@ export const projects = [
     {
     slug: "toyota-yaris-GR",
     title: "Toyota Yaris GR",
+    position: 10,
     isLarge: true,
     preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/62199419-91ea-48fa-8317-43920c3e87ad_rw_1200.jpg?h=56dcac34b847fa7c76765547bec31e73",
     heroVideos: [{
@@ -152,6 +155,7 @@ export const projects = [
     {
       slug: "iván-de-viaje",
       title: "IVÁN DE VIAJE",
+      position: 8,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/34ac7348-eca6-4240-b76a-3fe1264283be_rw_1200.jpg?h=fd1998058fafbefa96c06f79fa3d7b5d",
       heroVideos: {
         orientation: "vertical",
@@ -301,6 +305,7 @@ export const projects = [
     {
       slug: "monster-2025",
       title: "MONSTER - NUEVO SABOR 2025",
+      position: 6,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4410a74c-0435-4c30-8a30-7162da82c037_rw_600.JPG?h=74bd587ea68f40ea4c8af228503dc0fc",
       heroVideos: {
           src: "https://player.vimeo.com/video/1102034248?h=8f17309068&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -339,6 +344,7 @@ export const projects = [
     {
       slug: "solomun-mandarine",
       title: "SOLOMUN - MANDARINE  2023",
+      position: 12,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/0f069f13-1856-46a3-80a4-838b8ec3cdf4_rw_600.JPG?h=ec3eda3fa6dc6c6b3dbb746f3a2e97bb",
       heroVideos: {
           orientation: "horizontal"
@@ -363,6 +369,7 @@ export const projects = [
     {
       slug: "latin-american-fashion",
       title: "LATIN AMERICAN FASHION",
+      position: 11,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/86edcd15-6483-4f3e-a638-d32167a69c1a_rw_600.JPG?h=c509b90d00179bcb49a760a63b11bfd6",
       heroVideos: {
           orientation: "horizontal"
@@ -408,7 +415,7 @@ export const projects = [
       slug: "ds-7-bruno-gillot-mercedes",
       title: "DS 7 - Bruno Gillot - Mercedes - 2024",
       isLarge: true,
-      position: 3,
+      position: 4,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b9a59a68-fedf-41cc-bcd3-51398e1d0567_rw_1200.jpg?h=c5a68050b9c1fcfd1f3741366308ca27",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428445?h=08bcab9645&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -455,6 +462,7 @@ export const projects = [
     {
       slug: "final-futbol-femenino-boca-vs-river-2023",
       title: "FINAL FUTBOL FEMENINO BOCA VS RIVER - 2023",
+      position: 13,
       isLarge: true,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/31e0b471-e4b6-4f9d-a631-3661cb0ba5d5_rw_1200.JPG?h=d8786fb5b073438a93a5ed25e09a32a6",
       heroVideos: {
@@ -487,6 +495,7 @@ export const projects = [
     {
       slug: "champions-2vs2-gatorade-2025",
       title: "CHAMPIONS 2VS2 GATORADE - 2025",
+      position: 9,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/968da2c3-8915-4722-b135-d89ebdcff81c_rw_600.jpg?h=63ae677bf3cec523f15290f281695565",
       heroVideos: [{
           src:"https://player.vimeo.com/video/1102353890?h=e3f54d37c6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -530,7 +539,7 @@ export const projects = [
       slug: "ds-7-bruno-gillot-pigue-2024",
       title: "DS 7 - BRUNO GUILLOT - PIGUÉ - 2024",
       isLarge: true,
-      position: 4,
+      position: 2,
       preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1370800e-fdf4-486c-b17d-2302136e296e_rw_1920.jpg?h=0cabb23c613ac0a1c2940b76f51b77c1",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428950?h=7eba73ed7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
