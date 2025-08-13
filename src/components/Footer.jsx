@@ -36,6 +36,7 @@ function Footer() {
     const data = new FormData();
     data.append("name", formData.name);
     data.append("email", formData.email);
+    data.append("phone", formData.phone);
     data.append("message", formData.message);
     data.append("_captcha", "false");
 
