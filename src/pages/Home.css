@@ -39,7 +39,6 @@
   align-items: center;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.3);
 }
 
 /* Ajuste extra para móviles con barras del navegador */
@@ -49,4 +48,57 @@
   .video-background {
     min-height: 100svh; /* “small viewport” para iOS/Android */
   }
+}
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.sound-toggle-button {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 9999;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.sound-toggle-button:hover,
+.sound-toggle-button:focus {
+  outline: none;
+}
+
+/* Opcional: para mobile, que el botón sea más grande y fácil de tocar */
+@media (max-width: 480px) {
+  .sound-toggle-button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+.icon-container {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.icon-container:hover {
+  transform: scale(1.2);
 }
