@@ -3,7 +3,7 @@ export const projects = [
         slug: "coolcam-gatorade",
         title: "COOLCAM GATORADE",
         position: 5,
-        preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/e830e8b7-59b2-490d-896e-ba4fe2e146cb_rw_1200.jpg?h=00b1432d79f7f701438f5925a51a7832",
+        preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1062014f-1f57-4008-b877-087fe15849dc_rw_1920.jpg?h=0d4d877f3a761f6ee91d5a4ebb57c6c0",
         heroVideos: [{
             src: "https://player.vimeo.com/video/1099684828?h=a9e3d2ee0b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
             orientation: "vertical",
@@ -34,7 +34,7 @@ export const projects = [
       slug: "jeep-renegade",
       title: "JEEP RENEGADE",
       position: 7,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/1f3adbe6-cb13-4a48-9dda-14e7ab5aa840_rw_1200.jpg?h=95185dd6a30677e35750e054c6857413",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/16a49186-8e08-4fe7-8f03-4bfc620e2791_rw_1920.jpg?h=39c426b439b243b4f9c61fa3d02dab32",
       heroVideos: {
           orientation: "horizontal"
         },
@@ -65,7 +65,7 @@ export const projects = [
       title: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
       isLarge: true,
       position: 3,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/47a9b5c2-89fa-4e4e-a7f0-be551445e229_rw_1920.jpg?h=757b3e63ffc806e0b0bb0ceb965ef4d6",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c68ce6e1-000c-466e-a664-2ebb8bdfc96e_rw_600.jpg?h=3a20cd8d786bb768816ce4fd3f4da653",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428133?h=f4647ba131&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
           orientation: "horizontal"
@@ -111,7 +111,7 @@ export const projects = [
     title: "Toyota Yaris GR",
     position: 10,
     isLarge: true,
-    preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/62199419-91ea-48fa-8317-43920c3e87ad_rw_1200.jpg?h=56dcac34b847fa7c76765547bec31e73",
+    preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/cf5de958-cd98-4d0d-a4e0-149ecbee9c01_rw_600.jpg?h=220b4ada5c2404f66440ac772b054cfe",
     heroVideos: [{
         src: "https://player.vimeo.com/video/1099814152?h=9736a4d239&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         orientation: "horizontal",
@@ -156,7 +156,7 @@ export const projects = [
       slug: "iván-de-viaje",
       title: "IVÁN DE VIAJE",
       position: 8,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/34ac7348-eca6-4240-b76a-3fe1264283be_rw_1200.jpg?h=fd1998058fafbefa96c06f79fa3d7b5d",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4d64d009-a878-4379-be63-8aec9fd2417e_rw_1920.jpg?h=77044f8181adb9e78c3c608be6508598",
       heroVideos: {
         orientation: "vertical",
         sideImage: "https://images.unsplash.com/photo-7?auto=format&fit=crop&w=1600&q=80"
@@ -306,7 +306,7 @@ export const projects = [
       slug: "monster-2025",
       title: "MONSTER - NUEVO SABOR 2025",
       position: 6,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/4410a74c-0435-4c30-8a30-7162da82c037_rw_600.JPG?h=74bd587ea68f40ea4c8af228503dc0fc",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/a4b7564a-f947-464d-83f2-36f7a352660c_rw_1920.jpg?h=ad83ab65d4d9e94d175f3cccb04ab97c",
       heroVideos: {
           src: "https://player.vimeo.com/video/1102034248?h=8f17309068&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
           orientation: "horizontal"
@@ -345,7 +345,7 @@ export const projects = [
       slug: "solomun-mandarine",
       title: "SOLOMUN - MANDARINE  2023",
       position: 12,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/0f069f13-1856-46a3-80a4-838b8ec3cdf4_rw_600.JPG?h=ec3eda3fa6dc6c6b3dbb746f3a2e97bb",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/206309ab-9726-45ad-868f-9adc876b3232_rw_1920.jpg?h=af0dbd5d94169decde6818685db7002b",
       heroVideos: {
           orientation: "horizontal"
         },
@@ -370,7 +370,7 @@ export const projects = [
       slug: "latin-american-fashion",
       title: "LATIN AMERICAN FASHION",
       position: 11,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/86edcd15-6483-4f3e-a638-d32167a69c1a_rw_600.JPG?h=c509b90d00179bcb49a760a63b11bfd6",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/61a3b924-0a54-4c74-8131-c24c4c056ad2_rw_1920.jpg?h=20481303ce99cb3aebee9a0d92a6ca54",
       heroVideos: {
           orientation: "horizontal"
         },
@@ -416,7 +416,7 @@ export const projects = [
       title: "DS 7 - Bruno Gillot - Mercedes - 2024",
       isLarge: true,
       position: 4,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/b9a59a68-fedf-41cc-bcd3-51398e1d0567_rw_1200.jpg?h=c5a68050b9c1fcfd1f3741366308ca27",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/eb420785-9675-4e2e-a68d-a04da0c7f4b8_rw_1920.jpg?h=0fb0ff9d84ac3dd748f293438fb7ea59",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428445?h=08bcab9645&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
           orientation: "horizontal"
@@ -496,7 +496,7 @@ export const projects = [
       slug: "champions-2vs2-gatorade-2025",
       title: "CHAMPIONS 2VS2 GATORADE - 2025",
       position: 9,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/968da2c3-8915-4722-b135-d89ebdcff81c_rw_600.jpg?h=63ae677bf3cec523f15290f281695565",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/87152df2-64c0-4684-94dd-81ccb358b781_rw_1920.jpg?h=636b626b09dda226183500c3d2b76c1a",
       heroVideos: [{
           src:"https://player.vimeo.com/video/1102353890?h=e3f54d37c6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
           orientation: "vertical",

@@ -118,7 +118,9 @@ function Footer() {
                   <input 
                     type="tel"
                     name="phone"
-                    placeholder="Telefono (Opcional)" 
+                    placeholder="Telefono (Opcional)"
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                   <textarea
                     name="message"
