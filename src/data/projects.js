@@ -65,7 +65,7 @@ export const projects = [
       title: "DS 7 - BRUNO GUILLOR - AZCUENAGA - 2024",
       isLarge: true,
       position: 3,
-      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/c68ce6e1-000c-466e-a664-2ebb8bdfc96e_rw_600.jpg?h=3a20cd8d786bb768816ce4fd3f4da653",
+      preview: "https://cdn.myportfolio.com/c9b1d247-7dd8-46c9-b8a1-f8c1811ae4a0/242bcd9f-5409-4bb0-a186-ea76b35e7d30_rw_1920.jpg?h=5c1832c702761732fe8581441bca49e4",
       heroVideos: [{
           src: "https://player.vimeo.com/video/1099428133?h=f4647ba131&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
           orientation: "horizontal"
